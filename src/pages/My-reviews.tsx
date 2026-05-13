@@ -3,7 +3,7 @@ import { useAuth } from '../hooks/useAuth'
 import { supabase } from '../lib/supabase'
 import { Link } from 'react-router-dom'
 
-export default function My-reviews() {
+export default function MyReviews() {
   const { user, loading } = useAuth()
   const [data, setData] = useState<Record<string, unknown>[]>([])
   const [fetching, setFetching] = useState(true)
